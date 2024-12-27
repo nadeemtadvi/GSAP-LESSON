@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #131313;
+  overflow-x: hidden;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #4788ad;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/29708577/pexels-photo-29708577/free-photo-of-scenic-lake-braies-with-mountain-reflections.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  color: #fff;
+}
+nav h1 {
+  font-size: 30px;
+}
+nav i {
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  
+}
+.full {
+  position: absolute;
+  right: -40%;
+  top: 0;
+  background-color: #ffffff21;
+  width: 40%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  padding: 60px 50px;
+  color: #131313;
+}
+.full h4 {
+  font-size: 47px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #131313;
+}
+.full i {
+  font-size: 30px;
+  color: #131313;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+}
