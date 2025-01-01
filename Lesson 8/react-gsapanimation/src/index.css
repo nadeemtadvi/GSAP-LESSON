@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sakura", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #131313;
+    overflow-x: hidden ;
+  }
+  main{
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    padding:20px;
+  }
+  .box{
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+
+  }
+  section, .flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  .container{
+    border:2px solid #fff;
+    border-radius: 10px;
+    padding: 1.42rem;
+  }
+  .boxes, .rounded{
+    background: linear-gradient(to right bottom, tomato, crimson);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .half-circle{
+    background: linear-gradient(to right bottom, rgb(111, 255, 111), limegreen);
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+  }
+  .button-container, .Context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  button{
+    border-radius: 20px;
+    padding: 5px 32px 8px;
+    background: linear-gradient(to right bottom,lightyellow, yellow);
+    font-size: 20px;
+    color:#111;
+    border: none;
+    font-weight: 600;
+  }
+  button:active{
+    scale: 0.95;
+  }
+ 
