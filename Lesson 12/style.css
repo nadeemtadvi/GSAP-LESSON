@@ -1,3 +1,100 @@
-.page1{
-    background-image: url(https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page1 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.moving {
+  transform: translate(0, -50%) scaleY(0);
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.elem {
+  cursor: pointer;
+}
+.elem h2 {
+  line-height: 4.5vw;
+}
+
+.moving-in {
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.moving-in h4 {
+  display: inline-block;
+  color: #000;
+  margin-right: 2rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.elem:hover .moving {
+  transform: translate(0, -50%) scaleY(1);
+}
+.elem:hover .moving h4 {
+  opacity: 1;
+}
+.elem:hover h2 {
+  font-style: italic;
+}
+.blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(#facc15, #facc15, #facc15);
+  box-shadow: 10 0 10px 20px #facc15, -10 0 10px 20px #facc15;
+  z-index: 20;
+}
+
+.img-box .overlay p {
+  opacity: 0;
+}
+.img-box:hover .overlay {
+  background-color: #000000;
+}
+.img-box:hover .overlay p {
+  opacity: 1;
+}
+.overlay {
+  z-index: 10;
+}
+.img-box {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.img-box:hover img {
+  scale: 1.1;
 }
