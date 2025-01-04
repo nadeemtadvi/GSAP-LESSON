@@ -53,13 +53,13 @@ function startanimate() {
             trigger: ".parent",
             start: "top top",
             end: "bottom bottom", 
-            scrub: true, // Increased scrub value for slower animation
+            scrub: true, 
             markers: true,
         }
     });
     tl.to(frames, {
         currentIndex: frames.maxIndex,
-        ease: "none", // Added ease none for smoother scrolling
+        ease: "none", 
         onUpdate: () => {
             loadFrames(Math.floor(frames.currentIndex));
         }
