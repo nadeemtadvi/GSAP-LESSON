@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,16 @@ body {
   background-color: #0D0D0D;
   color: #fff;
 }
-.tilt-box{
+.bebas{
+  font-family: "Bebas Neue", serif;
+}
+.tilt-box, .section-two{
 
   perspective: 1000px;
 }
 #perspective{
   transform: rotateY(60deg) rotateX(60deg) ;
+}
+.rotate{
+  transform-origin: 50% 50%;
 }
